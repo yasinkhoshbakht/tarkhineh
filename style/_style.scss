@@ -11,6 +11,7 @@ body {
         width: 100%;
         height: 100px;
         justify-content: space-around;
+        align-items: center;
         ul {
           gap: 25px;
 
@@ -25,6 +26,119 @@ body {
               font-family: eregular;
               text-decoration: none;
               color: $second-color;
+            }
+          }
+        }
+      }
+      .order-food {
+        width: 100%;
+      }
+      .menu {
+        width: 100%;
+        height: 140px;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-family: ebold;
+        }
+      }
+      .food {
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 120px;
+
+        a {
+          font-family: eregular;
+          color: $second-color;
+        }
+        .text {
+          width: 100%;
+          justify-content: space-evenly;
+          margin-top: -28px;
+
+          button {
+            width: 155px;
+            height: 48px;
+            color: #353535;
+            border: 0;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            :hover {
+              color: $primary-color;
+              font-family: eebold;
+              font-size: 15px;
+            }
+          }
+        }
+        .drink {
+          flex-direction: column;
+
+          .box {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 288px;
+            height: 160px;
+            background-color: $primary-color;
+            border-radius: 8px;
+
+            img {
+              padding-bottom: 250px;
+            }
+          }
+        }
+        .dessert {
+          flex-direction: column;
+
+          .box {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 288px;
+            height: 160px;
+            background-color: $primary-color;
+            border-radius: 8px;
+
+            img {
+              padding-bottom: 150px;
+            }
+          }
+        }
+        .starter {
+          flex-direction: column;
+
+          .box {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 288px;
+            height: 160px;
+            background-color: $primary-color;
+            border-radius: 8px;
+
+            img {
+              padding-bottom: 150px;
+            }
+          }
+        }
+        .main-course {
+          flex-direction: column;
+
+          .box {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 288px;
+            height: 160px;
+            background-color: $primary-color;
+            border-radius: 8px;
+
+            img {
+              padding-bottom: 150px;
             }
           }
         }
