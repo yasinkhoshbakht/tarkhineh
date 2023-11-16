@@ -41,7 +41,7 @@
 }
 
 .container {
-  padding: 0px 108px;
+  padding: 48px 108px;
 }
 
 .flex {
@@ -58,7 +58,7 @@ body {
 }
 body main header nav {
   width: 100%;
-  height: 100px;
+  height: 115px;
   justify-content: space-around;
   align-items: center;
 }
@@ -176,6 +176,128 @@ body main header .food .main-course .box {
 }
 body main header .food .main-course .box img {
   padding-bottom: 150px;
+}
+body main .about {
+  width: 100%;
+  height: 390px;
+}
+body main .tour-title {
+  width: 100%;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+body main .tour-title h1 {
+  font-family: ebold;
+}
+body main .tour {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main .tour .akbatan {
+  width: 288px;
+  height: 328px;
+  border: 2px solid #ccc;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body main .tour .akbatan img {
+  width: 284px;
+  height: 190px;
+}
+body main .tour .akbatan .text-description {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .tour .akbatan .text-description h2 {
+  font-family: esbold;
+}
+body main .tour .akbatan .text-description p {
+  font-family: eregular;
+}
+body main .tour .chaloos {
+  width: 288px;
+  height: 328px;
+  border: 2px solid #ccc;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body main .tour .chaloos img {
+  width: 284px;
+  height: 190px;
+}
+body main .tour .chaloos .text-description {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .tour .chaloos .text-description h2 {
+  font-family: esbold;
+}
+body main .tour .chaloos .text-description p {
+  font-family: eregular;
+}
+body main .tour .aghdasieh {
+  width: 288px;
+  height: 328px;
+  border: 2px solid #ccc;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body main .tour .aghdasieh img {
+  width: 284px;
+  height: 190px;
+}
+body main .tour .aghdasieh .text-description {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .tour .aghdasieh .text-description h2 {
+  font-family: esbold;
+}
+body main .tour .aghdasieh .text-description p {
+  font-family: eregular;
+}
+body main .tour .vanak {
+  width: 288px;
+  height: 328px;
+  border: 2px solid #ccc;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+body main .tour .vanak img {
+  width: 284px;
+  height: 190px;
+}
+body main .tour .vanak .text-description {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main .tour .vanak .text-description h2 {
+  font-family: esbold;
+}
+body main .tour .vanak .text-description p {
+  font-family: eregular;
+}
+body main footer img {
+  width: 100%;
+  height: 319px;
 }
 
 /*# sourceMappingURL=style.css.map */
