@@ -32,6 +32,38 @@ body {
       }
       .order-food {
         width: 100%;
+        height: 336px;
+        background-size: cover;
+        background-image: url(../images/Slider.png);
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+
+        h1 {
+          color: #ffff;
+          font-size: 40px;
+          font-family: ebold;
+        }
+        .online {
+          width: 100%;
+
+          justify-content: center;
+          align-items: center;
+          button {
+            width: 184px;
+            height: 40px;
+            background-color: $primary-color;
+            border-radius: 8px;
+            color: #ffff;
+            font-family: eregular;
+            border: 0;
+
+            a {
+              color: #ffff;
+              font-size: 15px;
+            }
+          }
+        }
       }
       .menu {
         width: 100%;
@@ -147,12 +179,66 @@ body {
     .about {
       width: 100%;
       height: 390px;
+      background-image: url(../images/about.png);
+      background-size: cover;
+
+      .rightpart {
+        color: #ffff;
+        justify-content: center;
+        flex-direction: column;
+        text-align: justify;
+        width: 50%;
+        align-items: end;
+        gap: 20px;
+
+        .about-text {
+          text-align: justify;
+          flex-direction: column;
+
+          h1 {
+            font-family: esbold;
+          }
+          p {
+            width: 600px;
+            height: 180px;
+            font-size: 20px;
+            font-family: eregular;
+          }
+        }
+        button {
+          width: 184px;
+          height: 40px;
+          border-radius: 4px;
+          border: 1px solid white;
+          background-color: rgba(255, 255, 255, 0);
+          color: white;
+          align-items: center;
+          justify-content: center;
+
+          a {
+            color: white;
+            font-family: eregular;
+          }
+        }
+      }
+      .leftpart {
+        align-items: center;
+        justify-content: end;
+        width: 43%;
+        padding-top: 58px;
+        padding-left: 40px;
+
+        img {
+          width: 392px;
+          height: 280px;
+        }
+      }
     }
     .tour-title {
       width: 100%;
       padding-top: 50px;
-      justify-content: center;
-      align-items: center;
+
+      text-align: center;
 
       h1 {
         font-family: ebold;
@@ -277,9 +363,131 @@ body {
       }
     }
     footer {
-      img {
-        width: 100%;
-        height: 319px;
+      width: 100%;
+      height: 319px;
+      background-image: url(../images/Footer.png);
+      display: grid;
+      background-size: cover;
+      grid-template-columns: 300px 300px 600px;
+      justify-content: center;
+      gap: 128px;
+      align-items: center;
+
+      .connect-easy {
+        flex-direction: column;
+        gap: 15px;
+        h2 {
+          color: white;
+          font-family: esbold;
+        }
+        ul {
+          flex-direction: column;
+          gap: 15px;
+          li {
+            list-style-type: none;
+
+            a {
+              font-family: eregular;
+              color: white;
+            }
+          }
+        }
+      }
+      .connect-branch {
+        flex-direction: column;
+
+        h2 {
+          color: white;
+          font-family: esbold;
+          padding-bottom: 15px;
+        }
+        ul {
+          flex-direction: column;
+          gap: 15px;
+          li {
+            list-style-type: none;
+
+            a {
+              font-family: eregular;
+              color: white;
+            }
+            .app {
+              flex-direction: row;
+            }
+          }
+        }
+      }
+      .connect-about {
+        justify-content: center;
+        gap: 15px;
+        padding-top: 20px;
+        .your-self {
+          flex-direction: column;
+          gap: 10px;
+
+          h2 {
+            font-family: esbold;
+            color: white;
+          }
+          .one {
+            width: 250px;
+            height: 40px;
+            background-color: #35353500;
+            border: 1px solid rgba(255, 254, 254, 0.459);
+            border-radius: 5px;
+            padding-right: 10px;
+            font-family: eregular;
+            color: white;
+          }
+          .two {
+            width: 250px;
+            height: 40px;
+            background-color: #35353500;
+            border: 1px solid rgba(255, 254, 254, 0.459);
+            border-radius: 5px;
+            padding-right: 10px;
+            font-family: eregular;
+            color: white;
+          }
+          .three {
+            width: 250px;
+            height: 40px;
+            background-color: #35353500;
+            border: 1px solid rgba(255, 254, 254, 0.459);
+            border-radius: 5px;
+            padding-right: 10px;
+            font-family: eregular;
+            color: white;
+          }
+        }
+        .massage {
+          flex-direction: column;
+          align-items: end;
+          padding-top: 50px;
+          gap: 20px;
+          .four {
+            width: 250px;
+            height: 140px;
+            background-color: #35353500;
+            border: 1px solid rgba(255, 254, 254, 0.459);
+            border-radius: 5px;
+            padding-right: 10px;
+            font-family: eregular;
+            color: white;
+          }
+          button {
+            width: 200px;
+            height: 35px;
+            background-color: #35353500;
+            border: 1px solid rgba(255, 254, 254, 0.459);
+            border-radius: 5px;
+            font-family: eregular;
+
+            a {
+              color: white;
+            }
+          }
+        }
       }
     }
   }

@@ -193,9 +193,12 @@
             ></a>
           </div>
         </nav>
-        <a href="#"
-          ><img class="order-food" src="images/Slider.png" alt="order food"
-        /></a>
+        <div class="order-food flex">
+          <h1>تجربه غذای سالم و گیاهی به سبک ترخینه</h1>
+          <div class="online flex">
+            <button><a href="#">سفارش آنلاین غذا</a></button>
+          </div>
+        </div>
         <div class="menu flex"><h1>منوی رستوران</h1></div>
         <div class="food flex container">
           <div class="main-course flex">
@@ -232,34 +235,50 @@
           </div>
         </div>
       </header>
-      <a href="#"><img class="about" src="images/about.png" alt="about" /></a>
-      <div class="tour-title flex">
+      <div class="about flex">
+        <div class="rightpart flex">
+          <div class="about-text flex">
+            <h1>رستوران‌های زنجیره‌ای ترخینه</h1>
+            <p>
+              مهمان‌نوازی یکی از مهم‌ترین مشخصه‌های ایرانیان است و باعث افتخار
+              ماست که بیش از 20 سال است خدمت‌گزار مردم شریف ایران هستیم. ما در
+              رستوران‌های زنجیره‌ای ترخینه همواره تلاش کردیم که در محیطی اصیل بر
+              پایه معماری و طراحی مدرن در کنار طبیعتی دلنواز، غذایی سالم و درخور
+              شان شما عزیزان ارائه دهیم.
+            </p>
+          </div>
+          <button class="flex">
+            <a href="#">اطلاعات بیشتر</a>
+            <img src="images/arrow-left.png" alt="" />
+          </button>
+        </div>
+        <div class="leftpart flex">
+          <img src="images/features.png" alt="features" />
+        </div>
+      </div>
+      <div class="tour-title">
         <h1>ترخینه گردی</h1>
       </div>
       <div class="tour flex container">
         <div class="akbatan flex">
-          <a target="_blank" href="img_5terre.jpg">
-            <img
-              src="images/akbatan.png"
-              alt="akbatan"
-              width="600"
-              height="400"
-            />
-          </a>
+          <img
+            src="images/akbatan.png"
+            alt="akbatan"
+            width="600"
+            height="400"
+          />
           <div class="text-description flex">
             <h2>شعبه اکباتان</h2>
             <p>شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم</p>
           </div>
         </div>
         <div class="chaloos flex">
-          <a target="_blank" href="img_5terre.jpg">
-            <img
-              src="images/chaloos.png"
-              alt="chaloos"
-              width="600"
-              height="400"
-            />
-          </a>
+          <img
+            src="images/chaloos.png"
+            alt="chaloos"
+            width="600"
+            height="400"
+          />
           <div class="text-description flex">
             <h2>شعبه چالوس</h2>
             <p>
@@ -268,23 +287,19 @@
           </div>
         </div>
         <div class="aghdasieh flex">
-          <a target="_blank" href="img_5terre.jpg">
-            <img
-              src="images/aghdasieh.png"
-              alt="aghdasieh"
-              width="600"
-              height="400"
-            />
-          </a>
+          <img
+            src="images/aghdasieh.png"
+            alt="aghdasieh"
+            width="600"
+            height="400"
+          />
           <div class="text-description flex">
             <h2>شعبه اقدسیه</h2>
             <p>خیابان اقدسیه ، نرسیده به میدان خیام، پلاک ۸</p>
           </div>
         </div>
         <div class="vanak flex">
-          <a target="_blank" href="img_5terre.jpg">
-            <img src="images/vanak.png" alt="vanak" width="600" height="400" />
-          </a>
+          <img src="images/vanak.png" alt="vanak" width="600" height="400" />
           <div class="text-description flex">
             <h2>شعبه ونک</h2>
             <p>میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶</p>
@@ -292,7 +307,44 @@
         </div>
       </div>
       <footer>
-        <img src="images/Footer.png" alt="footer" />
+        <div class="connect-easy flex">
+          <h2>دسترسی آسان</h2>
+          <ul class="flex">
+            <li><a href="#">پرسش‌های متداول</a></li>
+            <li><a href="#">قوانین ترخینه</a></li>
+            <li><a href="#">حریم خصوصی</a></li>
+          </ul>
+          <div class="app flex">
+            <img src="images/Footer icons3.png" alt="twitter" />
+            <img src="images/Footer icons2.png" alt="instagram" />
+            <img src="images/Footer icons1.png" alt="telegram" />
+          </div>
+        </div>
+        <div class="connect-branch flex">
+          <h2>شعبه‌های ترخینه</h2>
+          <ul class="flex">
+            <li><a href="#">شعبه اکباتان</a></li>
+            <li><a href="#">شعبه چالوس</a></li>
+            <li><a href="#">شعبه اقدسیه</a></li>
+            <li><a href="#">شعبه ونک</a></li>
+          </ul>
+        </div>
+        <div class="connect-about flex grid">
+          <div class="your-self flex grid">
+            <h2>پیام به ترخینه</h2>
+            <input class="one" type="text" placeholder="نام و نام خوانوادگی" />
+            <input class="two" type="number" placeholder="شماره تلفن" />
+            <input
+              class="three"
+              type="email"
+              placeholder="ادرس ایمیل(اختیاری)"
+            />
+          </div>
+          <div class="massage flex">
+            <input class="four" type="text" placeholder="پیام شما" />
+            <button><a href="#">ارسال پیام</a></button>
+          </div>
+        </div>
       </footer>
     </main>
   </body>

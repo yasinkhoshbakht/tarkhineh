@@ -79,6 +79,35 @@ body main header nav ul li a {
 }
 body main header .order-food {
   width: 100%;
+  height: 336px;
+  background-size: cover;
+  background-image: url(../images/Slider.png);
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: column;
+}
+body main header .order-food h1 {
+  color: white;
+  font-size: 40px;
+  font-family: ebold;
+}
+body main header .order-food .online {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+body main header .order-food .online button {
+  width: 184px;
+  height: 40px;
+  background-color: #417f56;
+  border-radius: 8px;
+  color: white;
+  font-family: eregular;
+  border: 0;
+}
+body main header .order-food .online button a {
+  color: white;
+  font-size: 15px;
 }
 body main header .menu {
   width: 100%;
@@ -180,12 +209,60 @@ body main header .food .main-course .box img {
 body main .about {
   width: 100%;
   height: 390px;
+  background-image: url(../images/about.png);
+  background-size: cover;
+}
+body main .about .rightpart {
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  width: 50%;
+  align-items: end;
+  gap: 20px;
+}
+body main .about .rightpart .about-text {
+  text-align: justify;
+  flex-direction: column;
+}
+body main .about .rightpart .about-text h1 {
+  font-family: esbold;
+}
+body main .about .rightpart .about-text p {
+  width: 600px;
+  height: 180px;
+  font-size: 20px;
+  font-family: eregular;
+}
+body main .about .rightpart button {
+  width: 184px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+body main .about .rightpart button a {
+  color: white;
+  font-family: eregular;
+}
+body main .about .leftpart {
+  align-items: center;
+  justify-content: end;
+  width: 43%;
+  padding-top: 58px;
+  padding-left: 40px;
+}
+body main .about .leftpart img {
+  width: 392px;
+  height: 280px;
 }
 body main .tour-title {
   width: 100%;
   padding-top: 50px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 body main .tour-title h1 {
   font-family: ebold;
@@ -295,9 +372,127 @@ body main .tour .vanak .text-description h2 {
 body main .tour .vanak .text-description p {
   font-family: eregular;
 }
-body main footer img {
+body main footer {
   width: 100%;
   height: 319px;
+  background-image: url(../images/Footer.png);
+  display: grid;
+  background-size: cover;
+  grid-template-columns: 300px 300px 600px;
+  justify-content: center;
+  gap: 128px;
+  align-items: center;
+}
+body main footer .connect-easy {
+  flex-direction: column;
+  gap: 15px;
+}
+body main footer .connect-easy h2 {
+  color: white;
+  font-family: esbold;
+}
+body main footer .connect-easy ul {
+  flex-direction: column;
+  gap: 15px;
+}
+body main footer .connect-easy ul li {
+  list-style-type: none;
+}
+body main footer .connect-easy ul li a {
+  font-family: eregular;
+  color: white;
+}
+body main footer .connect-branch {
+  flex-direction: column;
+}
+body main footer .connect-branch h2 {
+  color: white;
+  font-family: esbold;
+  padding-bottom: 15px;
+}
+body main footer .connect-branch ul {
+  flex-direction: column;
+  gap: 15px;
+}
+body main footer .connect-branch ul li {
+  list-style-type: none;
+}
+body main footer .connect-branch ul li a {
+  font-family: eregular;
+  color: white;
+}
+body main footer .connect-branch ul li .app {
+  flex-direction: row;
+}
+body main footer .connect-about {
+  justify-content: center;
+  gap: 15px;
+  padding-top: 20px;
+}
+body main footer .connect-about .your-self {
+  flex-direction: column;
+  gap: 10px;
+}
+body main footer .connect-about .your-self h2 {
+  font-family: esbold;
+  color: white;
+}
+body main footer .connect-about .your-self .one {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(53, 53, 53, 0);
+  border: 1px solid rgba(255, 254, 254, 0.459);
+  border-radius: 5px;
+  padding-right: 10px;
+  font-family: eregular;
+  color: white;
+}
+body main footer .connect-about .your-self .two {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(53, 53, 53, 0);
+  border: 1px solid rgba(255, 254, 254, 0.459);
+  border-radius: 5px;
+  padding-right: 10px;
+  font-family: eregular;
+  color: white;
+}
+body main footer .connect-about .your-self .three {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(53, 53, 53, 0);
+  border: 1px solid rgba(255, 254, 254, 0.459);
+  border-radius: 5px;
+  padding-right: 10px;
+  font-family: eregular;
+  color: white;
+}
+body main footer .connect-about .massage {
+  flex-direction: column;
+  align-items: end;
+  padding-top: 50px;
+  gap: 20px;
+}
+body main footer .connect-about .massage .four {
+  width: 250px;
+  height: 140px;
+  background-color: rgba(53, 53, 53, 0);
+  border: 1px solid rgba(255, 254, 254, 0.459);
+  border-radius: 5px;
+  padding-right: 10px;
+  font-family: eregular;
+  color: white;
+}
+body main footer .connect-about .massage button {
+  width: 200px;
+  height: 35px;
+  background-color: rgba(53, 53, 53, 0);
+  border: 1px solid rgba(255, 254, 254, 0.459);
+  border-radius: 5px;
+  font-family: eregular;
+}
+body main footer .connect-about .massage button a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
