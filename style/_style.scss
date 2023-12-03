@@ -15,52 +15,82 @@ body {
         ul {
           gap: 25px;
 
+          .active {
+            a {
+              color: $primary-color;
+            }
+          }
           li {
             list-style-type: none;
 
             :hover {
               color: $primary-color;
-              font-family: eebold;
             }
             a {
-              font-family: eregular;
+              font-family: ebold;
               text-decoration: none;
               color: $second-color;
             }
           }
         }
       }
-      .order-food {
+      .carousel {
         width: 100%;
         height: 336px;
-        background-size: cover;
-        background-image: url(../images/Slider.png);
-        justify-content: space-evenly;
-        text-align: center;
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
 
-        h1 {
-          color: #ffff;
-          font-size: 40px;
-          font-family: ebold;
-        }
-        .online {
-          width: 100%;
-
+        .carousel-indicators {
+          display: flex;
+          align-items: end;
           justify-content: center;
-          align-items: center;
-          button {
-            width: 184px;
-            height: 40px;
-            background-color: $primary-color;
-            border-radius: 8px;
-            color: #ffff;
-            font-family: eregular;
-            border: 0;
 
-            a {
-              color: #ffff;
-              font-size: 15px;
+          .carousel-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../images/Rectangle.png);
+            width: 152px;
+            margin-bottom: -18px;
+            button {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: #adadad;
+            }
+            .active {
+              background-color: $primary-color;
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+        .carousel-inner {
+          width: 100%;
+          height: 336px;
+
+          .carousel-item {
+            width: 100%;
+            height: 336px;
+
+            .carousel-caption {
+              margin-bottom: 25px;
+              h2 {
+                padding-bottom: 50px;
+                font-family: ebold;
+              }
+              button {
+                width: 160px;
+                height: 35px;
+                border: none;
+                background-color: $primary-color;
+                border-radius: 8px;
+                font-family: eregular;
+              }
+            }
+            img {
+              width: 100%;
+              height: 336px;
             }
           }
         }
@@ -84,6 +114,7 @@ body {
         a {
           font-family: eregular;
           color: $second-color;
+          text-decoration: none;
         }
         .text {
           width: 100%;
@@ -93,6 +124,7 @@ body {
           button {
             width: 155px;
             height: 48px;
+            background-color: #fff;
             color: #353535;
             border: 0;
             border-radius: 4px;
@@ -218,6 +250,7 @@ body {
           a {
             color: white;
             font-family: eregular;
+            text-decoration: none;
           }
         }
       }
@@ -241,7 +274,7 @@ body {
       text-align: center;
 
       h1 {
-        font-family: ebold;
+        font-family: esbold;
       }
     }
     .tour {
@@ -268,9 +301,12 @@ body {
           flex-direction: column;
           align-items: center;
           text-align: center;
+          gap: 5px;
+          padding-top: 10px;
 
           h2 {
-            font-family: esbold;
+            font-family: eregular;
+            font-size: 25px;
           }
           p {
             font-family: eregular;
@@ -296,9 +332,12 @@ body {
           flex-direction: column;
           align-items: center;
           text-align: center;
+          gap: 5px;
+          padding-top: 10px;
 
           h2 {
-            font-family: esbold;
+            font-family: eregular;
+            font-size: 25px;
           }
           p {
             font-family: eregular;
@@ -324,9 +363,12 @@ body {
           flex-direction: column;
           align-items: center;
           text-align: center;
+          gap: 5px;
+          padding-top: 10px;
 
           h2 {
-            font-family: esbold;
+            font-family: eregular;
+            font-size: 25px;
           }
           p {
             font-family: eregular;
@@ -352,9 +394,12 @@ body {
           flex-direction: column;
           align-items: center;
           text-align: center;
+          gap: 5px;
+          padding-top: 10px;
 
           h2 {
-            font-family: esbold;
+            font-family: eregular;
+            font-size: 25px;
           }
           p {
             font-family: eregular;
@@ -389,6 +434,7 @@ body {
             a {
               font-family: eregular;
               color: white;
+              text-decoration: none;
             }
           }
         }
@@ -410,6 +456,7 @@ body {
             a {
               font-family: eregular;
               color: white;
+              text-decoration: none;
             }
             .app {
               flex-direction: row;
@@ -485,6 +532,120 @@ body {
 
             a {
               color: white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.food-image {
+  width: 100%;
+  height: 336px;
+  background-image: url(../images/Slider.png);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  gap: 50px;
+
+  h2 {
+    color: #fff;
+    font-family: ebold;
+  }
+  button {
+    width: 184px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: eregular;
+    border: none;
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+.second-food {
+  flex-direction: column;
+  gap: 20px;
+
+  h2 {
+    font-family: ebold;
+  }
+  .food-card {
+    justify-content: space-between;
+    .card {
+      text-align: center;
+      height: 100px;
+      display: flex;
+
+      .card-title {
+        font-family: ebold;
+      }
+      .btn {
+        background-color: $primary-color;
+        width: 256px;
+        height: 40px;
+        font-family: eregular;
+        border: none;
+      }
+      .card-text {
+        padding-top: 20px;
+        .right-part {
+          align-items: start;
+          flex-direction: column;
+          width: 150px;
+
+          .add-favorite {
+            height: 5px;
+            p {
+              font-size: 10px;
+              color: #adadad;
+              font-family: eregular;
+            }
+          }
+          .score {
+            justify-content: center;
+            align-items: center;
+
+            .fa-solid {
+              padding-bottom: 20px;
+            }
+            .score-text {
+              font-size: 10px;
+              color: #adadad;
+              font-family: eregular;
+            }
+            .solo {
+              font-family: eregular;
+            }
+          }
+        }
+        .left-part {
+          .offer {
+            flex-direction: column;
+
+            .offer-content {
+              flex-direction: column;
+              align-items: end;
+              .first-price {
+                font-size: 15px;
+                color: #adadad;
+                font-family: eregular;
+                text-decoration: line-through #adadad;
+                height: 10px;
+                font-family: eregular;
+              }
+              .offer-box {
+                color: red;
+                background-color: rgba(255, 0, 0, 0.411);
+                width: 25px;
+                height: 16px;
+                font-size: 10px;
+                border-radius: 8px;
+                font-family: eregular;
+              }
             }
           }
         }
