@@ -52,9 +52,17 @@ a {
   text-decoration: none;
 }
 
+.padding-fix {
+  padding: 0px 145px;
+}
+
 body {
   direction: rtl;
   background-color: white;
+}
+body main {
+  display: flex;
+  flex-direction: column;
 }
 body main header nav {
   width: 100%;
@@ -514,7 +522,7 @@ body main footer .connect-about .your-self .three {
 body main footer .connect-about .massage {
   flex-direction: column;
   align-items: end;
-  padding-top: 50px;
+  padding-top: 55px;
   gap: 20px;
 }
 body main footer .connect-about .massage .four {
@@ -568,6 +576,7 @@ body main footer .connect-about .massage button a {
 .second-food {
   flex-direction: column;
   gap: 20px;
+  height: 600px;
 }
 .second-food h2 {
   font-family: ebold;
@@ -577,8 +586,8 @@ body main footer .connect-about .massage button a {
 }
 .second-food .food-card .card {
   text-align: center;
-  height: 100px;
   display: flex;
+  border: 1px solid #717171;
 }
 .second-food .food-card .card .card-title {
   font-family: ebold;
@@ -644,6 +653,316 @@ body main footer .connect-about .massage button a {
   font-size: 10px;
   border-radius: 8px;
   font-family: eregular;
+}
+
+.third-food {
+  flex-direction: column;
+  gap: 20px;
+  height: 600px;
+  width: 100%;
+  background-color: #417f56;
+}
+.third-food h2 {
+  font-family: ebold;
+  padding-top: 30px;
+  color: #fff;
+}
+.third-food .food-card {
+  justify-content: space-between;
+}
+.third-food .food-card .card {
+  text-align: center;
+  display: flex;
+  border: none;
+}
+.third-food .food-card .card .card-title {
+  font-family: ebold;
+}
+.third-food .food-card .card .btn {
+  background-color: #417f56;
+  width: 256px;
+  height: 40px;
+  font-family: eregular;
+  border: none;
+}
+.third-food .food-card .card .card-text {
+  padding-top: 20px;
+}
+.third-food .food-card .card .card-text .right-part {
+  align-items: start;
+  flex-direction: column;
+  width: 150px;
+}
+.third-food .food-card .card .card-text .right-part .add-favorite {
+  height: 5px;
+}
+.third-food .food-card .card .card-text .right-part .add-favorite p {
+  font-size: 10px;
+  color: #adadad;
+  font-family: eregular;
+}
+.third-food .food-card .card .card-text .right-part .score {
+  justify-content: center;
+  align-items: center;
+}
+.third-food .food-card .card .card-text .right-part .score .fa-solid {
+  padding-bottom: 20px;
+}
+.third-food .food-card .card .card-text .right-part .score .score-text {
+  font-size: 10px;
+  color: #adadad;
+  font-family: eregular;
+}
+.third-food .food-card .card .card-text .right-part .score .solo {
+  font-family: eregular;
+}
+.third-food .food-card .card .card-text .left-part .offer {
+  flex-direction: column;
+}
+.third-food .food-card .card .card-text .left-part .offer .offer-content {
+  flex-direction: column;
+  align-items: end;
+}
+.third-food .food-card .card .card-text .left-part .offer .offer-content .first-price {
+  font-size: 15px;
+  color: #adadad;
+  font-family: eregular;
+  text-decoration: line-through #adadad;
+  height: 10px;
+  font-family: eregular;
+}
+.third-food .food-card .card .card-text .left-part .offer .offer-content .offer-box {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.411);
+  width: 25px;
+  height: 16px;
+  font-size: 10px;
+  border-radius: 8px;
+  font-family: eregular;
+}
+
+.fourth-food {
+  flex-direction: column;
+  gap: 20px;
+  height: 600px;
+  width: 100%;
+}
+.fourth-food h2 {
+  font-family: ebold;
+  padding-top: 50px;
+}
+.fourth-food .food-card {
+  justify-content: space-between;
+}
+.fourth-food .food-card .card {
+  text-align: center;
+  display: flex;
+  border: none;
+  border: 1px solid #717171;
+}
+.fourth-food .food-card .card .card-title {
+  font-family: ebold;
+}
+.fourth-food .food-card .card .btn {
+  background-color: #417f56;
+  width: 256px;
+  height: 40px;
+  font-family: eregular;
+  border: none;
+}
+.fourth-food .food-card .card .card-text {
+  padding-top: 20px;
+}
+.fourth-food .food-card .card .card-text .right-part {
+  align-items: start;
+  flex-direction: column;
+  width: 150px;
+}
+.fourth-food .food-card .card .card-text .right-part .add-favorite {
+  height: 5px;
+}
+.fourth-food .food-card .card .card-text .right-part .add-favorite p {
+  font-size: 10px;
+  color: #adadad;
+  font-family: eregular;
+}
+.fourth-food .food-card .card .card-text .right-part .score {
+  justify-content: center;
+  align-items: center;
+}
+.fourth-food .food-card .card .card-text .right-part .score .fa-solid {
+  padding-bottom: 20px;
+}
+.fourth-food .food-card .card .card-text .right-part .score .score-text {
+  font-size: 10px;
+  color: #adadad;
+  font-family: eregular;
+}
+.fourth-food .food-card .card .card-text .right-part .score .solo {
+  font-family: eregular;
+}
+.fourth-food .food-card .card .card-text .left-part .offer {
+  flex-direction: column;
+}
+.fourth-food .food-card .card .card-text .left-part .offer .offer-content {
+  flex-direction: column;
+  align-items: end;
+}
+.fourth-food .food-card .card .card-text .left-part .offer .offer-content .first-price {
+  font-size: 15px;
+  color: #adadad;
+  font-family: eregular;
+  text-decoration: line-through #adadad;
+  height: 10px;
+  font-family: eregular;
+}
+.fourth-food .food-card .card .card-text .left-part .offer .offer-content .offer-box {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.411);
+  width: 25px;
+  height: 16px;
+  font-size: 10px;
+  border-radius: 8px;
+  font-family: eregular;
+}
+
+.show-menu {
+  width: 100%;
+  justify-content: center;
+}
+.show-menu button {
+  width: 185px;
+  height: 40px;
+  border: 1px solid #417f56;
+  color: #417f56;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.akbatan-branch {
+  width: 100%;
+  height: 660px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.akbatan-branch h2 {
+  font-family: ebold;
+}
+.akbatan-branch img {
+  width: 100%;
+}
+.akbatan-branch .branch-info {
+  width: 800px;
+  height: 130px;
+  border: 3px solid #417f56;
+  border-radius: 8px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -50px;
+  background-color: #fff;
+}
+.akbatan-branch .branch-info div {
+  width: 25%;
+  flex-direction: column;
+  height: 85%;
+  align-items: center;
+  gap: 10px;
+  font-family: eregular;
+}
+
+.comments {
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.comments h2 {
+  font-family: ebold;
+}
+.comments .comments-text {
+  gap: 20px;
+}
+.comments .comments-text .arezo {
+  width: 600px;
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid rgba(139, 139, 139, 0.418);
+  border-radius: 8px;
+  align-items: center;
+}
+.comments .comments-text .arezo .right-part-second {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px 25px 15px;
+  font-family: eregular;
+  gap: 10px;
+}
+.comments .comments-text .arezo .right-part-second .name {
+  text-align: center;
+}
+.comments .comments-text .arezo .right-part-second .name p {
+  height: 10px;
+  color: #717171;
+}
+.comments .comments-text .arezo .left-part-second {
+  flex-direction: column;
+  height: 80%;
+  width: 70%;
+  text-align: justify;
+  align-items: center;
+  justify-content: end;
+}
+.comments .comments-text .arezo .left-part-second p {
+  width: 420px;
+  font-family: eregular;
+}
+.comments .comments-text .arezo .left-part-second .star-second {
+  width: 100%;
+  direction: ltr;
+}
+.comments .comments-text .sardar {
+  width: 600px;
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid rgba(139, 139, 139, 0.418);
+  border-radius: 8px;
+  align-items: center;
+}
+.comments .comments-text .sardar .right-part-second {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px 25px 15px;
+  font-family: eregular;
+  gap: 10px;
+}
+.comments .comments-text .sardar .right-part-second .name {
+  text-align: center;
+}
+.comments .comments-text .sardar .right-part-second .name p {
+  height: 10px;
+  color: #717171;
+}
+.comments .comments-text .sardar .left-part-second {
+  flex-direction: column;
+  height: 80%;
+  width: 70%;
+  text-align: justify;
+  align-items: center;
+  justify-content: end;
+}
+.comments .comments-text .sardar .left-part-second p {
+  width: 420px;
+  font-family: eregular;
+}
+.comments .comments-text .sardar .left-part-second .star-second {
+  width: 100%;
+  direction: ltr;
 }
 
 /*# sourceMappingURL=style.css.map */

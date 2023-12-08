@@ -6,6 +6,8 @@ body {
   background-color: #ffff;
 
   main {
+    display: flex;
+    flex-direction: column;
     header {
       nav {
         width: 100%;
@@ -510,7 +512,7 @@ body {
         .massage {
           flex-direction: column;
           align-items: end;
-          padding-top: 50px;
+          padding-top: 55px;
           gap: 20px;
           .four {
             width: 250px;
@@ -569,6 +571,7 @@ body {
 .second-food {
   flex-direction: column;
   gap: 20px;
+  height: 600px;
 
   h2 {
     font-family: ebold;
@@ -577,8 +580,8 @@ body {
     justify-content: space-between;
     .card {
       text-align: center;
-      height: 100px;
       display: flex;
+      border: 1px solid $second-color;
 
       .card-title {
         font-family: ebold;
@@ -648,6 +651,337 @@ body {
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+.third-food {
+  flex-direction: column;
+  gap: 20px;
+  height: 600px;
+  width: 100%;
+  background-color: $primary-color;
+
+  h2 {
+    font-family: ebold;
+    padding-top: 30px;
+    color: #fff;
+  }
+  .food-card {
+    justify-content: space-between;
+    .card {
+      text-align: center;
+      display: flex;
+      border: none;
+
+      .card-title {
+        font-family: ebold;
+      }
+      .btn {
+        background-color: $primary-color;
+        width: 256px;
+        height: 40px;
+        font-family: eregular;
+        border: none;
+      }
+      .card-text {
+        padding-top: 20px;
+        .right-part {
+          align-items: start;
+          flex-direction: column;
+          width: 150px;
+
+          .add-favorite {
+            height: 5px;
+            p {
+              font-size: 10px;
+              color: #adadad;
+              font-family: eregular;
+            }
+          }
+          .score {
+            justify-content: center;
+            align-items: center;
+
+            .fa-solid {
+              padding-bottom: 20px;
+            }
+            .score-text {
+              font-size: 10px;
+              color: #adadad;
+              font-family: eregular;
+            }
+            .solo {
+              font-family: eregular;
+            }
+          }
+        }
+        .left-part {
+          .offer {
+            flex-direction: column;
+
+            .offer-content {
+              flex-direction: column;
+              align-items: end;
+              .first-price {
+                font-size: 15px;
+                color: #adadad;
+                font-family: eregular;
+                text-decoration: line-through #adadad;
+                height: 10px;
+                font-family: eregular;
+              }
+              .offer-box {
+                color: red;
+                background-color: rgba(255, 0, 0, 0.411);
+                width: 25px;
+                height: 16px;
+                font-size: 10px;
+                border-radius: 8px;
+                font-family: eregular;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.fourth-food {
+  flex-direction: column;
+  gap: 20px;
+  height: 600px;
+  width: 100%;
+
+  h2 {
+    font-family: ebold;
+    padding-top: 50px;
+  }
+  .food-card {
+    justify-content: space-between;
+    .card {
+      text-align: center;
+      display: flex;
+      border: none;
+      border: 1px solid $second-color;
+
+      .card-title {
+        font-family: ebold;
+      }
+      .btn {
+        background-color: $primary-color;
+        width: 256px;
+        height: 40px;
+        font-family: eregular;
+        border: none;
+      }
+      .card-text {
+        padding-top: 20px;
+        .right-part {
+          align-items: start;
+          flex-direction: column;
+          width: 150px;
+
+          .add-favorite {
+            height: 5px;
+            p {
+              font-size: 10px;
+              color: #adadad;
+              font-family: eregular;
+            }
+          }
+          .score {
+            justify-content: center;
+            align-items: center;
+
+            .fa-solid {
+              padding-bottom: 20px;
+            }
+            .score-text {
+              font-size: 10px;
+              color: #adadad;
+              font-family: eregular;
+            }
+            .solo {
+              font-family: eregular;
+            }
+          }
+        }
+        .left-part {
+          .offer {
+            flex-direction: column;
+
+            .offer-content {
+              flex-direction: column;
+              align-items: end;
+              .first-price {
+                font-size: 15px;
+                color: #adadad;
+                font-family: eregular;
+                text-decoration: line-through #adadad;
+                height: 10px;
+                font-family: eregular;
+              }
+              .offer-box {
+                color: red;
+                background-color: rgba(255, 0, 0, 0.411);
+                width: 25px;
+                height: 16px;
+                font-size: 10px;
+                border-radius: 8px;
+                font-family: eregular;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.show-menu {
+  width: 100%;
+  justify-content: center;
+  button {
+    width: 185px;
+    height: 40px;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+}
+.akbatan-branch {
+  width: 100%;
+  height: 660px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  h2 {
+    font-family: ebold;
+  }
+  img {
+    width: 100%;
+  }
+  .branch-info {
+    width: 800px;
+    height: 130px;
+    border: 3px solid $primary-color;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -50px;
+    background-color: #fff;
+
+    div {
+      width: 25%;
+      flex-direction: column;
+      height: 85%;
+      align-items: center;
+      gap: 10px;
+      font-family: eregular;
+    }
+  }
+}
+.comments {
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  h2 {
+    font-family: ebold;
+  }
+  .comments-text {
+    gap: 20px;
+
+    .arezo {
+      width: 600px;
+      height: 200px;
+      background-color: #fff;
+      border: 2px solid rgba(139, 139, 139, 0.418);
+      border-radius: 8px;
+      align-items: center;
+
+      .right-part-second {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 25px 25px 15px;
+        font-family: eregular;
+        gap: 10px;
+
+        .name {
+          text-align: center;
+
+          p {
+            height: 10px;
+            color: $second-color;
+          }
+        }
+      }
+      .left-part-second {
+        flex-direction: column;
+        height: 80%;
+        width: 70%;
+        text-align: justify;
+        align-items: center;
+        justify-content: end;
+
+        p {
+          width: 420px;
+          font-family: eregular;
+        }
+        .star-second {
+          width: 100%;
+          direction: ltr;
+        }
+      }
+    }
+    .sardar {
+      width: 600px;
+      height: 200px;
+      background-color: #fff;
+      border: 2px solid rgba(139, 139, 139, 0.418);
+      border-radius: 8px;
+      align-items: center;
+
+      .right-part-second {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 25px 25px 15px;
+        font-family: eregular;
+        gap: 10px;
+
+        .name {
+          text-align: center;
+
+          p {
+            height: 10px;
+            color: $second-color;
+          }
+        }
+      }
+      .left-part-second {
+        flex-direction: column;
+        height: 80%;
+        width: 70%;
+        text-align: justify;
+        align-items: center;
+        justify-content: end;
+
+        p {
+          width: 420px;
+          font-family: eregular;
+        }
+        .star-second {
+          width: 100%;
+          direction: ltr;
         }
       }
     }
