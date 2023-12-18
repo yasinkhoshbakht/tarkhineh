@@ -289,13 +289,44 @@ body main .about .rightpart button a {
 body main .about .leftpart {
   align-items: center;
   justify-content: end;
-  width: 43%;
+  width: 50%;
   padding-top: 58px;
   padding-left: 40px;
+  gap: 80px;
 }
-body main .about .leftpart img {
-  width: 392px;
-  height: 280px;
+body main .about .leftpart .top {
+  width: 100%;
+  gap: 50px;
+}
+body main .about .leftpart .top .item {
+  width: 20%;
+  text-align: center;
+}
+body main .about .leftpart .top .item img {
+  width: 50px;
+  height: 50px;
+}
+body main .about .leftpart .top .item h4 {
+  color: #fff;
+  font-size: 15px;
+  padding-top: 15px;
+}
+body main .about .leftpart .bottom {
+  width: 100%;
+  gap: 50px;
+}
+body main .about .leftpart .bottom .item {
+  width: 20%;
+  text-align: center;
+}
+body main .about .leftpart .bottom .item img {
+  width: 50px;
+  height: 50px;
+}
+body main .about .leftpart .bottom .item h4 {
+  color: #fff;
+  font-size: 15px;
+  padding-top: 15px;
 }
 body main .tour-title {
   width: 100%;
