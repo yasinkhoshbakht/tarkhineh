@@ -69,6 +69,11 @@ body main header nav {
   height: 115px;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+}
+body main header nav .fa-solid,
+body main header nav .fa-bars {
+  display: none;
 }
 body main header nav ul {
   gap: 25px;
@@ -158,6 +163,7 @@ body main header .food {
   justify-content: space-evenly;
   align-items: center;
   padding-top: 120px;
+  flex-wrap: wrap;
 }
 body main header .food a {
   font-family: eregular;
@@ -296,7 +302,7 @@ body main .about .leftpart {
 }
 body main .about .leftpart .top {
   width: 100%;
-  gap: 50px;
+  gap: 100px;
 }
 body main .about .leftpart .top .item {
   width: 20%;
@@ -310,10 +316,11 @@ body main .about .leftpart .top .item h4 {
   color: #fff;
   font-size: 15px;
   padding-top: 15px;
+  width: 150px;
 }
 body main .about .leftpart .bottom {
   width: 100%;
-  gap: 50px;
+  gap: 100px;
 }
 body main .about .leftpart .bottom .item {
   width: 20%;
@@ -327,6 +334,7 @@ body main .about .leftpart .bottom .item h4 {
   color: #fff;
   font-size: 15px;
   padding-top: 15px;
+  width: 150px;
 }
 body main .tour-title {
   width: 100%;
@@ -340,6 +348,7 @@ body main .tour {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 body main .tour .akbatan {
   width: 288px;
@@ -458,6 +467,7 @@ body main footer {
   height: 319px;
   background-image: url(../images/Footer.png);
   display: grid;
+  display: flex;
   background-size: cover;
   grid-template-columns: 300px 300px 600px;
   justify-content: center;
@@ -994,6 +1004,79 @@ body main footer .connect-about .massage button a {
 .comments .comments-text .sardar .left-part-second .star-second {
   width: 100%;
   direction: ltr;
+}
+
+@media only screen and (max-width: 1400px) {
+  body main header .food .drink {
+    padding-top: 200px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  body main footer {
+    height: 850px;
+    gap: 50px;
+    flex-direction: column;
+  }
+  body main .about {
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .about .rightpart {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 990px) {
+  body main header nav .fa-solid,
+  body main header nav .fa-bars {
+    display: inline-block;
+  }
+  body main header nav ul li,
+  body main header nav .tools {
+    display: none;
+  }
+  body main header nav {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 990px) {
+  body main header .carousel {
+    padding-top: 50px;
+  }
+  body main header .carousel-indicators {
+    padding-top: 50px;
+  }
+  body main header .carousel .carousel-indicators .carousel-body {
+    margin-bottom: -68px;
+  }
+  body main header .carousel .carousel-control-prev,
+  body main header .carousel .carousel-control-next {
+    padding-top: 80px;
+  }
+  body main header .food .dessert {
+    padding-top: 200px;
+  }
+  body main header .menu h1 {
+    padding-top: 50px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  body main header .food .starter {
+    padding-top: 200px;
+  }
+  body main .about .rightpart .about-text p {
+    width: 300px;
+    padding-bottom: 300px;
+  }
+  body main footer .connect-about {
+    flex-direction: column;
+  }
+  body main footer {
+    height: 1020px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

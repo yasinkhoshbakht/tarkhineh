@@ -1,0 +1,72 @@
+@media only screen and (max-width: 1400px) {
+  body main header .food .drink {
+    padding-top: 200px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  body main footer {
+    height: 850px;
+    gap: 50px;
+    flex-direction: column;
+  }
+  body main .about {
+    height: 800px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main .about .rightpart {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 990px) {
+  body main header nav .fa-solid,
+  body main header nav .fa-bars {
+    display: inline-block;
+  }
+  body main header nav ul li,
+  body main header nav .tools {
+    display: none;
+  }
+  body main header nav {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 990px) {
+  body main header .carousel {
+    padding-top: 50px;
+  }
+  body main header .carousel-indicators {
+    padding-top: 50px;
+  }
+  body main header .carousel .carousel-indicators .carousel-body {
+    margin-bottom: -68px;
+  }
+  body main header .carousel .carousel-control-prev,
+  body main header .carousel .carousel-control-next {
+    padding-top: 80px;
+  }
+  body main header .food .dessert {
+    padding-top: 200px;
+  }
+  body main header .menu h1 {
+    padding-top: 50px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  body main header .food .starter {
+    padding-top: 200px;
+  }
+  body main .about .rightpart .about-text p {
+    width: 300px;
+    padding-bottom: 300px;
+  }
+  body main footer .connect-about {
+    flex-direction: column;
+  }
+  body main footer {
+    height: 1020px;
+  }
+}

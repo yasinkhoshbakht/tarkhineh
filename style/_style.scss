@@ -14,6 +14,12 @@ body {
         height: 115px;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
+
+        .fa-solid,
+        .fa-bars {
+          display: none;
+        }
         ul {
           gap: 25px;
 
@@ -112,6 +118,7 @@ body {
         justify-content: space-evenly;
         align-items: center;
         padding-top: 120px;
+        flex-wrap: wrap;
 
         a {
           font-family: eregular;
@@ -266,7 +273,7 @@ body {
 
         .top {
           width: 100%;
-          gap: 50px;
+          gap: 100px;
 
           .item {
             width: 20%;
@@ -280,12 +287,13 @@ body {
               color: #fff;
               font-size: 15px;
               padding-top: 15px;
+              width: 150px;
             }
           }
         }
         .bottom {
           width: 100%;
-          gap: 50px;
+          gap: 100px;
 
           .item {
             width: 20%;
@@ -299,6 +307,7 @@ body {
               color: #fff;
               font-size: 15px;
               padding-top: 15px;
+              width: 150px;
             }
           }
         }
@@ -318,6 +327,7 @@ body {
       width: 100%;
       justify-content: space-evenly;
       align-items: center;
+      flex-wrap: wrap;
 
       .akbatan {
         width: 288px;
@@ -449,6 +459,7 @@ body {
       height: 319px;
       background-image: url(../images/Footer.png);
       display: grid;
+      display: flex;
       background-size: cover;
       grid-template-columns: 300px 300px 600px;
       justify-content: center;
